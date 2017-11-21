@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus title="请输入你的选择：" notice="请选择（0代表返回上层）"
+       entranceHandler="bao.action.ApplicationAction"
+       defaultProcessHandler="bao.action.handlers.ResultHandlerAction"
+       defaultPreHandler="bao.action.preHandler.DigitalInputAction" exceptionHandler="">
+
+    <menu id="query" title="查询学生" handler="" >
+        <menu id="query-id" title="学号查询" handler="" >
+            <menu id="query-id-result" title="学号：" handler="" />
+        </menu>
+        <menu id="query-name" title="姓名查询" handler="" />
+    </menu>
+    <menu id="add" title="新增学生" handler="" notice=""/>
+    <menu id="delete" title="删除学生" handler="" notice="请选择条件：">
+        <menu id="delete-id" title="学号" handler="" />
+    </menu>
+    <menu id="update" title="更新信息" handler="" notice="请选择学生条件：" >
+        <menu id="update-id" title="学号" handler="" >
+            <menu id="update-all" title="更新所有" handler="" />
+            <menu id="update-name" title="更新姓名" handler="" />
+            <menu id="update-sql" title="更新sql" handler="" />
+        </menu>
+    </menu>
+
+</menus>

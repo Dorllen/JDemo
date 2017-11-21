@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menus title="请输入你的选择：" notice="请选择（0代表返回上层）" id="app"
+       entranceHandler="bao.action.ApplicationAction"
+       defaultProcessHandler="bao.action.handlers.ResultHandlerAction"
+       defaultPreHandler="bao.action.preHandler.SelectedDigitalAction" exceptionHandler="" handler="bao.action.ApplicationAction">
+
+    <menu id="query" title="查询学生" handler="bao.action.preHandler.SelectedDigitalAction" >
+        <menu id="query-id" title="学号查询" handler="bao.action.preHandler.SelectedDigitalAction" >
+            <menu id="query-id-result" choice="1" title="学号：" handler="bao.action.preHandler.SelectedDigitalAction" />
+        </menu>
+        <menu id="query-name"  title="姓名查询" handler="" />
+    </menu>
+</menus>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menus title="请输入你的选择：" notice="请选择（0代表返回上层）" id="app"
+       entranceHandler="bao.action.ApplicationAction"
+       defaultProcessHandler="bao.action.handlers.ResultHandlerAction"
+       defaultPreHandler="bao.action.preHandler.SelectedDigitalAction" exceptionHandler="" handler="bao.action.ApplicationAction">
+
+    <menu id="query" title="查询学生" handler="bao.action.preHandler.SelectedDigitalAction" >
+        <menu id="query-id" title="学号查询" handler="bao.action.preHandler.SelectedDigitalAction" >
+            <menu id="query-id-result"  title="学号" handler="bao.demos.ResultHandler01Action" />
+        </menu>
+        <menu id="query-name"  title="姓名查询" />
+    </menu>
+    <menu id="update" title="更新信息" handler="bao.action.preHandler.SelectedDigitalAction" >
+        <menu id="update-id" title="学号" handler="bao.action.preHandler.SelectedDigitalAction" >
+            <menu id="update-all" title="更新所有" handler="bao.action.handlers.ResultHandlerAction" >
+                <menu id="result-tip" title="我是小明，我有特异功能." handler="bao.action.completion.CommLastAction"></menu>
+            </menu>
+            <menu id="update-name"  title="更新姓名" />
+            <menu id="update-sql"  title="更新sql" handler="bao.demos.ComputeOut01Action" />
+        </menu>
+    </menu>
+</menus>
