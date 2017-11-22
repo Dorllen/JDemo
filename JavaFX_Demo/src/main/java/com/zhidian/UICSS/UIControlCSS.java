@@ -56,7 +56,7 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import uicontrolcss.StyleStage.SceneCreator;
+//import uicontrolcss.StyleStage.SceneCreator;
 
 
 
@@ -64,7 +64,7 @@ import uicontrolcss.StyleStage.SceneCreator;
  *
  * @author Alexander Kouznetsov
  */
-public class UIControlCSS extends Application implements SceneCreator {
+public class UIControlCSS extends Application {
 
     /**
      * @param args the command line arguments
@@ -79,10 +79,10 @@ public class UIControlCSS extends Application implements SceneCreator {
         styleStage.add("controlStyle1", "controlStyle1.css");
         styleStage.add("controlStyle2", "controlStyle2.css");
         stage.show();
-        styleStage.setSceneCreator(this);
+//        styleStage.setSceneCreator(this);
     }
 
-    @Override
+//    @Override
     public Scene createScene() {
 
         ToggleGroup toggleGroup = new ToggleGroup();

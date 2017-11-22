@@ -31,7 +31,7 @@
 
 package com.zhidian.EventHandlers.paperdoll.clothes;
 
-import paperdoll.images.ImageManager;
+//import paperdoll.images.ImageManager;
 import java.util.ArrayList;
 import java.util.List;
 import javafx.scene.image.Image;
@@ -47,32 +47,32 @@ import javafx.scene.image.Image;
  */
 public class ClothListBuilder {
     
-    private List<Cloth> clothList;
-    
-    public List<Cloth> getClothList() {
-        if (clothList == null) {
-            buildClothList();
-        }
-        return clothList;
-    }
-    
-    private Image[] getClothImages(String clothName) {
-        Image []clothImages = new Image[3];
-        clothImages[0] = ImageManager.getImage("clothes/preview/" + clothName);
-        clothImages[1] = ImageManager.getImage("clothes/preview/" + clothName);
-        clothImages[2] = ImageManager.getImage("clothes/equipped/" + clothName);
-        return clothImages;
-    }
-    
-    private void buildClothList() {
-        clothList = new ArrayList<>();
-        for (String clothName : clothNames) {
-            Cloth c = new Cloth(getClothImages(clothName));
-            clothList.add(c);
-        }
-    }
-    
-    private final String []clothNames = {
-        "dress1.png", "dress2.png", "dress3.png", "dress4.png"
-    };
+//    private List<Cloth> clothList;
+//
+//    public List<Cloth> getClothList() {
+//        if (clothList == null) {
+//            buildClothList();
+//        }
+//        return clothList;
+//    }
+//
+//    private Image[] getClothImages(String clothName) {
+//        Image []clothImages = new Image[3];
+//        clothImages[0] = ImageManager.getImage("clothes/preview/" + clothName);
+//        clothImages[1] = ImageManager.getImage("clothes/preview/" + clothName);
+//        clothImages[2] = ImageManager.getImage("clothes/equipped/" + clothName);
+//        return clothImages;
+//    }
+//
+//    private void buildClothList() {
+//        clothList = new ArrayList<>();
+//        for (String clothName : clothNames) {
+//            Cloth c = new Cloth(getClothImages(clothName));
+//            clothList.add(c);
+//        }
+//    }
+//
+//    private final String []clothNames = {
+//        "dress1.png", "dress2.png", "dress3.png", "dress4.png"
+//    };
 }

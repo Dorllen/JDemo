@@ -31,10 +31,10 @@
 
 package com.zhidian.EventHandlers.paperdoll;
 
-import paperdoll.clothes.Cloth;
-import paperdoll.clothes.ClothListBuilder;
-import paperdoll.body.Body;
-import paperdoll.images.ImageManager;
+//import paperdoll.clothes.Cloth;
+//import paperdoll.clothes.ClothListBuilder;
+//import paperdoll.body.Body;
+//import paperdoll.images.ImageManager;
 import java.util.HashMap;
 import java.util.List;
 import javafx.application.Application;
@@ -76,36 +76,36 @@ public class PaperDoll extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Paper Doll");
         
-        ImageView header = new ImageView(ImageManager.getImage("ui/flowers.jpg"));        
-        VBox title = new VBox();
-        title.getChildren().addAll(header);
-        title.setPadding(new Insets(10.0));
-        
-        GridPane content = new GridPane();
-        content.add(Body.getBody().getNode(), 1, 1);
-        content.add(createItemPane(Body.getBody().getBodyPane()), 0, 1);
-        ColumnConstraints c1 = new ColumnConstraints();
-        c1.setHgrow(Priority.ALWAYS);
-        ColumnConstraints c2 = new ColumnConstraints();
-        c2.setHgrow(Priority.NEVER);
-        c2.setPrefWidth(Body.getBody().getBodyPane().getMinWidth() + 20);
-        content.getColumnConstraints().addAll(c1, c2);
-        
-        items = new HashMap<>();
-        Body.getBody().setItemsInfo(itemPane, items);
-        populateClothes();
-        
-        VBox root = new VBox();
-        root.getChildren().addAll(title, content);
-        primaryStage.setScene(new Scene(root, 800, 900));
-        primaryStage.setMinWidth(800);
-        primaryStage.setMinHeight(900);
-        primaryStage.show();
+//        ImageView header = new ImageView(ImageManager.getImage("ui/flowers.jpg"));
+//        VBox title = new VBox();
+//        title.getChildren().addAll(header);
+//        title.setPadding(new Insets(10.0));
+//
+//        GridPane content = new GridPane();
+//        content.add(Body.getBody().getNode(), 1, 1);
+//        content.add(createItemPane(Body.getBody().getBodyPane()), 0, 1);
+//        ColumnConstraints c1 = new ColumnConstraints();
+//        c1.setHgrow(Priority.ALWAYS);
+//        ColumnConstraints c2 = new ColumnConstraints();
+//        c2.setHgrow(Priority.NEVER);
+//        c2.setPrefWidth(Body.getBody().getBodyPane().getMinWidth() + 20);
+//        content.getColumnConstraints().addAll(c1, c2);
+//
+//        items = new HashMap<>();
+//        Body.getBody().setItemsInfo(itemPane, items);
+//        populateClothes();
+//
+//        VBox root = new VBox();
+//        root.getChildren().addAll(title, content);
+//        primaryStage.setScene(new Scene(root, 800, 900));
+//        primaryStage.setMinWidth(800);
+//        primaryStage.setMinHeight(900);
+//        primaryStage.show();
     }
     
     private FlowPane itemPane = null;
     
-    private HashMap<String, Cloth> items;
+//    private HashMap<String, Cloth> items;
     
     /**
      * A container for unequipped items is created here.
@@ -113,60 +113,60 @@ public class PaperDoll extends Application {
      * it when dropped here.
      * @return 
      */
-    private FlowPane createItemPane(final Pane bodyPane) {
-        if (!(itemPane == null))
-            return itemPane;
-        
-        itemPane = new FlowPane();
-        itemPane.setPadding(new Insets(10.0));
-        
-        itemPane.setOnDragDropped((DragEvent event) -> {
-            Dragboard db = event.getDragboard();
-            //Get an item ID here, which was stored when the drag started.
-            boolean success = false;
-            // If this is a meaningful drop...
-            if (db.hasString()) {
-                String nodeId = db.getString();
-                // ...search for the item on body. If it is there...
-                ImageView cloth = (ImageView) bodyPane.lookup("#" + nodeId);
-                if (cloth != null) {
-                    // ... it is removed from body
-                    // and added to an unequipped container.
-                    bodyPane.getChildren().remove(cloth);
-                    itemPane.getChildren().add(cloth);
-                    success = true;
-                }
-                // ...anyway, the item is not active or equipped anymore.
-                items.get(nodeId).takeOff();
-            }
-            event.setDropCompleted(success);
-            event.consume();
-        });
-        
-        itemPane.setOnDragOver((DragEvent event) -> {
-            if (event.getGestureSource() != itemPane &&
-                    event.getDragboard().hasString()) {
-                event.acceptTransferModes(TransferMode.MOVE);
-            }
-            event.consume();
-        });        
-        
-        return itemPane;
-    }
-    
-    /**
-     * Here items are added to unequipped items container.
-     */
-    private void populateClothes() {
-        ClothListBuilder clothBuilder = new ClothListBuilder();
-        if (itemPane == null)
-            throw new IllegalStateException("Should call getItems() before populating!");
-        List<Cloth> clothes = clothBuilder.getClothList();
-        clothes.stream().map((c) -> {
-            itemPane.getChildren().add(c.getNode());
-            return c;
-        }).forEach((c) -> {
-            items.put(c.getImageViewId(), c);
-        });
-    }
+//    private FlowPane createItemPane(final Pane bodyPane) {
+//        if (!(itemPane == null))
+//            return itemPane;
+//
+//        itemPane = new FlowPane();
+//        itemPane.setPadding(new Insets(10.0));
+//
+//        itemPane.setOnDragDropped((DragEvent event) -> {
+//            Dragboard db = event.getDragboard();
+//            //Get an item ID here, which was stored when the drag started.
+//            boolean success = false;
+//            // If this is a meaningful drop...
+//            if (db.hasString()) {
+//                String nodeId = db.getString();
+//                // ...search for the item on body. If it is there...
+//                ImageView cloth = (ImageView) bodyPane.lookup("#" + nodeId);
+//                if (cloth != null) {
+//                    // ... it is removed from body
+//                    // and added to an unequipped container.
+//                    bodyPane.getChildren().remove(cloth);
+//                    itemPane.getChildren().add(cloth);
+//                    success = true;
+//                }
+//                // ...anyway, the item is not active or equipped anymore.
+//                items.get(nodeId).takeOff();
+//            }
+//            event.setDropCompleted(success);
+//            event.consume();
+//        });
+//
+//        itemPane.setOnDragOver((DragEvent event) -> {
+//            if (event.getGestureSource() != itemPane &&
+//                    event.getDragboard().hasString()) {
+//                event.acceptTransferModes(TransferMode.MOVE);
+//            }
+//            event.consume();
+//        });
+//
+//        return itemPane;
+//    }
+//
+//    /**
+//     * Here items are added to unequipped items container.
+//     */
+//    private void populateClothes() {
+//        ClothListBuilder clothBuilder = new ClothListBuilder();
+//        if (itemPane == null)
+//            throw new IllegalStateException("Should call getItems() before populating!");
+//        List<Cloth> clothes = clothBuilder.getClothList();
+//        clothes.stream().map((c) -> {
+//            itemPane.getChildren().add(c.getNode());
+//            return c;
+//        }).forEach((c) -> {
+//            items.put(c.getImageViewId(), c);
+//        });
+//    }
 }

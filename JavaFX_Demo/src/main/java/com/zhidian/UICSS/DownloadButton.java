@@ -37,7 +37,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import uicontrolcss.StyleStage.SceneCreator;
+//import uicontrolcss.StyleStage.SceneCreator;
 
 
 
@@ -45,7 +45,7 @@ import uicontrolcss.StyleStage.SceneCreator;
  *
  * @author Alexander Kouznetsov
  */
-public class DownloadButton extends Application implements SceneCreator {
+public class DownloadButton extends Application {
 
     public static void main(String[] args) {
         Application.launch(args);
@@ -58,10 +58,10 @@ public class DownloadButton extends Application implements SceneCreator {
         styleStage.add("Style1", "DownloadButtonStyle1.css");
         styleStage.add("Style2", "DownloadButtonStyle2.css");
         stage.show();
-        styleStage.setSceneCreator(this);
+//        styleStage.setSceneCreator(this);
     }
 
-    @Override
+//    @Override
     public Scene createScene() {
         Button download = new Button("Download");
         download.getStyleClass().add("button1");
