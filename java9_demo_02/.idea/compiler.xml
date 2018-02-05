@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo3" />
+        <module name="demo4" />
+        <module name="demo_five" />
+        <module name="demo_four" />
+        <module name="demo_seven" />
+        <module name="demo_six" />
+        <module name="devday" />
+        <module name="devday-service" />
+        <module name="devday-talk-service" />
+        <module name="devday-workshop-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="9">
+      <module name="demo3" target="1.9" />
+      <module name="demo4" target="1.9" />
+      <module name="demo_five" target="9" />
+      <module name="demo_four" target="1.9" />
+      <module name="demo_seven" target="1.5" />
+      <module name="demo_six" target="1.5" />
+      <module name="devday" target="9" />
+      <module name="devday-service" target="9" />
+      <module name="devday-talk-service" target="9" />
+      <module name="devday-workshop-service" target="9" />
+      <module name="java9-modules-example" target="9" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

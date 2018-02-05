@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.3.9
+Built-By: pengdongneng
+Build-Jdk: 9.0.1
+Main-Class: com.example.chat.App
+

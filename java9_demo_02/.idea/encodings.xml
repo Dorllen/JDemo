@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/demo3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo4" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo_five" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo_four" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo_seven" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo_six" charset="UTF-8" />
+    <file url="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example" charset="UTF-8" />
+    <file url="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday" charset="UTF-8" />
+    <file url="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-service" charset="UTF-8" />
+    <file url="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-talk-service" charset="UTF-8" />
+    <file url="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-workshop-service" charset="UTF-8" />
+  </component>
+</project>

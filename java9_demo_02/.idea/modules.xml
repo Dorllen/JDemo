@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo1/demo1.iml" filepath="$PROJECT_DIR$/demo1/demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo2/demo2.iml" filepath="$PROJECT_DIR$/demo2/demo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo3/demo3.iml" filepath="$PROJECT_DIR$/demo3/demo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo4/demo4.iml" filepath="$PROJECT_DIR$/demo4/demo4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_five/demo_five.iml" filepath="$PROJECT_DIR$/demo_five/demo_five.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_four/demo_four.iml" filepath="$PROJECT_DIR$/demo_four/demo_four.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_seven/demo_seven.iml" filepath="$PROJECT_DIR$/demo_seven/demo_seven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_six/demo_six.iml" filepath="$PROJECT_DIR$/demo_six/demo_six.iml" />
+      <module fileurl="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday/devday.iml" filepath="$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday/devday.iml" />
+      <module fileurl="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-service/devday-service.iml" filepath="$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-service/devday-service.iml" />
+      <module fileurl="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-talk-service/devday-talk-service.iml" filepath="$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-talk-service/devday-talk-service.iml" />
+      <module fileurl="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-workshop-service/devday-workshop-service.iml" filepath="$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/devday-workshop-service/devday-workshop-service.iml" />
+      <module fileurl="file://$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/java9-modules-example.iml" filepath="$USER_HOME$/test/test/j9_github/java9-modules-maven-junit-example/java9-modules-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java9_demo_02.iml" filepath="$PROJECT_DIR$/java9_demo_02.iml" />
+    </modules>
+  </component>
+</project>
